@@ -1,0 +1,175 @@
+%\documentclass[handout]{beamer}
+\documentclass[]{beamer}
+\mode<presentation>
+\usepackage{beamerthemesplit}
+\usepackage{subfigure}
+\usepackage{slashed}
+\usepackage{color}
+%\usepackage{pdffig}
+\usepackage{pgf}
+\usepackage{amsmath}
+\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage{fancybox}
+\usepackage{subfigure}
+\usepackage{animate}
+\usepackage{pdfanim}
+\usepackage{multirow}
+\usepackage{sidecap} 
+\usepackage{psfrag}
+\usepackage{rotating}
+\usepackage{amsmath}
+%\usepackage{fcolorbox}
+\usepackage{soul}
+\usepackage{xcolor,cancel}
+\usepackage{colortbl}
+\usepackage[normalem]{ulem}
+\newcommand\hcancel[2][black]{\setbox0=\hbox{$#2$}%
+\rlap{\raisebox{.45\ht0}{\textcolor{#1}{\rule{\wd0}{1pt}}}}#2} 
+
+\newcommand\Ccancel[2][red]{\renewcommand\CancelColor{\color{#1}}\cancel{#2}}
+
+\usepackage{empheq}
+%\newcommand{\boxedeq}[1]{\begin{empheq}[box={\fboxsep=6pt\fbox}]{align*}#1\end{empheq}}
+%\newcommand{\coloredeq}[2]{\begin{empheq}[box=\colorbox{#1}]{align*}#2\end{empheq}}
+%\newcommand{\highlight}[2]{\colorbox{#1}{$\displaystyle #2$}}
+
+
+\usepackage[english]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{color,soul}
+\makeatletter
+\newcommand\SoulColor{%
+  \let\set@color\beamerorig@set@color
+  \let\reset@color\beamerorig@reset@color}
+\makeatother
+\setstcolor{red}
+\setul{}{1.5pt} %Use this to change weight of underline/strikethrough
+
+\newcommand{\displayst}[1]{\textrm{\SoulColor\Ccancel{$#1$}}}
+
+
+
+\makeatletter
+\def\UL@putbox{\ifx\UL@start\@empty \else % not inner
+  \vrule\@width\z@ \LA@penalty\@M
+  {\UL@skip\wd\UL@box \UL@leaders \kern-\UL@skip}%
+    \phantom{\box\UL@box}%
+  \fi}
+\makeatother
+
+% Variable width alert block
+\newenvironment<>{varalertblock}[2][0.9\textwidth]{%
+    \setlength{\textwidth}{#1}%
+    \setlength{\linewidth}{\textwidth}%
+  \begin{actionenv}#3%
+    \def\insertblocktitle{#2}%
+    \par%
+    \setbeamercolor{local structure}{parent=alerted text}%
+    \usebeamertemplate{block alerted begin}}
+  {\par%
+  \usebeamertemplate{block alerted end}%
+    \end{actionenv}}
+
+
+
+\definecolor{ah1col}{rgb}{0.84, 0.84, 0.84}
+
+%\usetheme{AnnArbor}
+%\usetheme{CambridgeUS}
+\usetheme{Madrid}
+
+
+%\setbeamercolor{palette primary}{fg=yellow, bg=black}
+%\setbeamercolor{palette secondary}{fg=black, bg=white}
+%\setbeamercolor{palette tertiary}{fg=yellow, bg=green}
+
+
+% Uncomment these to make handouts
+%\usepackage{pgfpages}
+%\pgfpagesuselayout{4 on 1}[a4paper, border shrink=5mm]
+%\usetheme{default}
+
+%Font and colour commands
+%\usefonttheme[onlylarge]{structuresmallcapsserif}
+%\usefonttheme[onlysmall]{structurebold}
+%\setbeamerfont{title}{shape=\itshape,family=\rmfamily}
+%%\setbeamercolor{title}{fg=red!80!black, bg=red!20!white}
+%\setbeamercolor{title}{fg=yellow, bg=black}
+%\setbeamercolor{block body}{bg=black, fg=white}
+%\usepackage{palatino}
+%\usepackage{charter}
+%\sffamily
+%bf
+
+%Uncomment this to make unshown listings slightly
+%visible
+%\setbeamercovered{transparent}
+
+
+%\title[{\tt DPF'13, UCSC}]{Exclusive $B\to X_{\{c,u\}} \ell^- \bar{\nu}$ angular analyses \\with hadronic tagging from $\babar$}
+%\title[]{Right-handed weak charged currents via exclusive \\ $\Bbar\to X_{\{c,u\}} \ell^- \bar{\nu}_\ell$ angular analyses \\with hadronic tagging from $\babar$}
+%\title[{\tt S, P, D waves}]{$B \to X \ell \ell$ }
+%\title[Vetoing using DTF]{ Some ideas for optimization of peaking component vetoing for $\overline{B}^0 \to \psi K^-\pip $}
+%\title[Moments method]{\textcolor{yellow}{Doing an angular fit without doing an angular fit:\\ the moments technique}}
+%\title[{\tt EvtXLL.cpp}]{\textcolor{yellow}{{\tt XLL}: an optimized MC generator for $b \to h h\mu\mu$}}
+%\title[$\psi(2S) \to J/\psi (\to \mup \mu^-) \pi \pi$]{$B_d \to \psi' K \pi$ and $B_s \to \psi' K K$ angular analyses\\ using the $\psi' \to \psi (\to \mup \mu^-) \pi \pi$ mode}
+%\title[$\psi(2S) \to J/\psi (\to \mup \mu^-) \pi \pi$]{$B_d \to \psi(2S) K \pi$ and $B_s \to \psi(2S) K K$ angular analyses\\ using the $\psi(2S) \to J/\psi (\to \mup \mu^-) \pi \pi$ mode}
+%\title[$\psi(2S) \to J/\psi (\to \mup \mu^-) \pi \pi$]{A proposal to break the two-fold ambiguity in \\ $B_d \to \psi(2S) K \pi$ and $B_s \to \psi(2S) K K$ amplitudes \\ using $\psi(2S) \to J/\psi (\to \mup \mu^-) \pi \pi$ }
+
+\title[CODEX-b:backgrounds \& simulations]{\textcolor{yellow}{Background measurements and simulations \\ for CODEX-b}}
+
+\date[28 Aug, 2018]{}
+%\date[Nov. $26^{th}$, 2013]{{\tt Physik-Institut, UZH, Nov. $26^{th}$, 2013}}}
+
+%\subtitle[]{(BAD \# 2566)}
+
+\author[Jongho Lee]{{\Large Jongho Lee}\\ {\footnotesize \vspace{0.25cm} LHCb summer student presentation \\ \vspace{0.25cm} Supervisors: Victor Coco, Biplab Dey \\ \vspace{0.25cm} 28th Aug, 2018, CERN} \\ \vspace{0.5cm} \includegraphics[width=3cm]{pictures/LHCbLogo.jpg} }
+
+
+%\author[Biplab Dey]{\vspace{-0.5cm}{\Large \underline{Biplab~Dey}, Nico Serra, Bill Dunwoodie}} 
+%\author[Biplab Dey]{\vspace{-0.5cm}{\Large \underline{Biplab~Dey}}\vspace{0.7cm} \\{\small {\tt Physik-Institut, Universit{\"a}t Z{\"u}rich}} \vspace{0.1cm} \\ {\scriptsize Nov. $26^{th}$, 2013}
+%\author[Biplab Dey]{{\Large \underline{Biplab~Dey}, Owen Long and Bill Gary \\ (w/ help from Bill Dunwoodie)}
+
+%\institute[\babar]{\normalsize March 2018 \babar Jamboree}
+%\institute[]{
+%\vspace{1cm}
+
+%{\flushbottom
+% \includegraphics[width=1.9in]{figs/logos/uni_zurich_pi_logo.png} %\hspace{1.1cm}
+ %\vspace{-1cm}\includegraphics[width=1.2in]{figs/logos/SLAC_Logo.jpg}\hspace{1.6cm} 
+%}
+%}
+
+
+\input{babarsym}
+\input{rgb}
+\begin{document}
+
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+% outline page
+%\begin{frame}
+%  \frametitle{Outline}
+%  \tableofcontents
+%\end{frame}
+
+%\AtBeginSection[]
+%\AtBeginSubsection[]
+
+
+%\AtBeginSection[]{
+%\addtocounter{framenumber}{-1}
+%  \begin{frame}
+%    \frametitle{Outline}
+%    \tableofcontents[currentsection]
+%  \end{frame}
+%}
+
+\input{sections/intro}
+\end{document}
+    

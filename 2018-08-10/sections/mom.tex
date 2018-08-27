@@ -1,0 +1,180 @@
+
+
+
+\frame{
+
+   \frametitle{$B\to J/\psi K\pi$: $m(K\pi)$ spectrum}
+
+   \begin{columns}
+      \column{0.5\textwidth}
+      \centering
+      {\large \textcolor{red}{Data}}:\\
+      \includegraphics[width=2.3in]{figs/intro/jpsikpi_data.pdf}
+      \column{0.5\textwidth}
+      \centering
+      {\large \textcolor{blue}{PHSP MC}}:\\
+      \includegraphics[width=2.3in]{figs/intro/jpsikpi_phsp.pdf}
+   \end{columns}
+\vspace{0.3cm}
+  \begin{itemize}
+    \item This is what the \textcolor{red}{Data} looks like, as is. \textcolor{red}{Irrespective} of the production \textcolor{red}{dynamics} or analysis method.
+\vspace{0.3cm}
+    \item \textcolor{red}{Data}: dominated by the $K^\ast(892)$ and the $K^{(\ast,\ast \ast)}(1430)$'s. Very \textcolor{red}{little} statistics \textcolor{red}{beyond $\sim$~1500~MeV}.
+  \end{itemize}
+}
+
+\frame{
+   \frametitle{Using {\tt PHSP} generator}
+  \begin{itemize}
+     \item {\tt PHSP} generator has two problems:
+  \begin{itemize}
+      \normalsize
+\vspace{0.1cm}
+    \item Generates bulk of statistics where there is very little data. Optimal use of \textcolor{red}{CPU resources}?
+\vspace{0.1cm}
+    \item The same thing eats into resources for generating much-required MC statistics where the bulk of the data is. 
+  \end{itemize}
+\vspace{0.4cm}
+     \item Similar problem for \textcolor{red}{$B_s \to KK\mu\mu$}, \textcolor{red}{$\Lambda_b \to pK\mumu$}, where a few resonances close to threshold strongly dominate the Dalitz plane.
+\vspace{0.4cm}
+     \item Generate something that is ``somewhat close'' to the Data, so that we maintain a \textcolor{red}{reasonable MC:Data ratio} over the entire \textcolor{red}{Dalitz} plane.
+  \end{itemize}
+}
+
+%\frame{
+%   \frametitle{Why a new generator?}
+%  \begin{itemize}
+%    \item Generic \textcolor{red}{$b \to X(\to h h) \mu \mu$ angular analyses}: $B_d \to K\pi\mu\mu$, $B_s \to KK\mu\mu$, $\Lambda_b \to pK\mu\mu$.
+%\vspace{0.7cm}
+%     \item Thrust is to go to wide $m(hh)$ window. 5-D phase-space:\\\textcolor{red}{$\phi \in \{\qsq, m_X, \ctl, \ctv, \chi\}$}. 
+%\vspace{0.7cm}
+%    \item  Mature \href{https://indico.cern.ch/event/407479/contribution/5/attachments/1141793/1635757/5D-Acceptance-Espen.pdf}{procedure} to get event-by-event $\epsilon(\phi)$. Generated MC first \textcolor{red}{reweighted} to \textcolor{red}{flat} in $\phi$.
+%\vspace{0.7cm}
+%    \item Need \textcolor{red}{high statistics MC}, especially at the PHSP edges in $\phi$.  
+%  \end{itemize}
+%}
+
+%\frame{
+%   \frametitle{Why a new generator? (cntd.)}
+%  \begin{itemize}
+%    \item Typically, {\tt PHSP} is used, but can be highly unoptimized for analysis needs.
+%\vspace{0.1cm}
+%    \item Example: for $B_d \to K\pi\mu\mu$, current analysis aims only till $m(K\pi) = 1530$~MeV. {\tt PHSP} is a waste: 
+%  \end{itemize}
+%\vspace{0.1cm}
+%      \centering
+%      \includegraphics[width=1.8in]{/home/hep/biplabd/cmtuser/analysis/test_XLL_Generator/plots/m_Kpi_KpiMuMu_PHSP.pdf}
+%  \begin{itemize}
+%\vspace{0.1cm}
+%    \item Aim: generate spectra that reasonably follows data. We'll \textcolor{red}{reweight} this to \textcolor{red}{flat anyways}. 
+%  \end{itemize}
+%}
+
+\frame{
+   \frametitle{Issues at $|\cos \theta|\to 1$ in $B\to hh\mu\mu$}
+  \begin{itemize}
+     \item Acceptance parameterized by Legendre polynomials in the helicity angles.
+     \item The Legendre polynomials in $x = \cos \theta$ are sensitive to to the boundaries at $x = \pm 1$.
+     \item \textcolor{red}{Efficiencies} tend to be typically lowest here. Showing for $B_d\to K\pi\mu\mu$: 
+  \end{itemize}
+  \vspace{0.15cm}
+   \begin{columns}
+      \column{0.5\textwidth}
+      \centering
+      \includegraphics[width=2.3in]{figs/intro/espen_negative_efficiencies.pdf}
+      \column{0.5\textwidth}
+      \centering
+      \includegraphics[width=2.3in]{figs/intro/espen_lowest_q2_ctl.pdf}
+   \end{columns}
+  \begin{itemize}
+     \item Solution: \textcolor{red}{generate more} at \textcolor{red}{$|\cos \theta|\to 1$}. 
+  \end{itemize}
+}
+
+\frame{
+   \frametitle{Proposed $m(hh)$ cocktail spectra}
+  \begin{itemize}
+     \item \textcolor{red}{$f_{hh}$}: cocktail pdf out of simple {\tt Exp} and {\tt Gaus} functions. 
+  \end{itemize}
+\vspace{0.5cm}
+   \begin{columns}
+      \column{0.33\textwidth}
+      \centering
+      $m(K\pi)$:\\
+      \includegraphics[width=1.6in]{/home/hep/biplabd/cmtuser/analysis/test_XLL_Generator/plots/m_Kpi.pdf}
+      \column{0.33\textwidth}
+      \centering
+      $m(KK)$:\\
+      \includegraphics[width=1.6in]{/home/hep/biplabd/cmtuser/analysis/test_XLL_Generator/plots/m_KK.pdf}
+      \column{0.33\textwidth}
+      \centering
+      $m(pK)$:\\
+      \includegraphics[width=1.6in]{/home/hep/biplabd/cmtuser/analysis/test_XLL_Generator/plots/m_pK.pdf}
+   \end{columns}
+}
+
+\frame{
+   \frametitle{Proposed $f_{\rm cth}$ pdf}
+  \begin{itemize}
+     \item \textcolor{red}{$f_{\rm cth}$}: generate more at $\cos \theta \to \pm 1$. 
+  \end{itemize}
+\vspace{0.5cm}
+      \centering
+      \includegraphics[width=2in]{/home/hep/biplabd/cmtuser/analysis/test_XLL_Generator/plots/cth.pdf}
+}
+
+
+\frame{
+   \frametitle{The {\tt XLL} generator}
+  \begin{itemize}
+     \item Written for the generic $b \to X (\to hh)\ell \ell$ decay. Let $p_B$ and $p_h$ be the $B$ and $X$ breakup momentum.
+\vspace{0.6cm}
+     \item Existing \href{http://arxiv.org/abs/hep-ex/0409046}{\textcolor{blue}{{\tt FLATQ2}} generator} reweights {\tt PHSP} by \textcolor{blue}{$1/p_B$}. Used in $\babar$ $B \to X_u \ell \nu$ analyses. 
+\vspace{0.6cm}
+     \item \textcolor{red}{{\tt XLL}}: reweight {\tt PHSP} by  \textcolor{red}{$1/(p_B p_h)$}. Flat in $\qsq$-$m_X$. Now reweight by \textcolor{red}{$f_{\rm cth}$} and \textcolor{red}{$f_{hh}$}. 
+     \vspace{0.6cm}
+  \end{itemize}
+}
+
+\frame{
+   \frametitle{The {\tt XLL} generator (contd.)}
+  \begin{itemize}
+   \item Weight $\textcolor{red}{w = f_{\rm cth} \times f_{hh} / (p_B p_h)}$. 
+\vspace{0.6cm}
+   \item Reweight the normalization integrals:\\ rate $\sim d\Phi |\mathcal{A}|^2\times\textcolor{red}{\displaystyle \frac{1}{w}}$
+\vspace{0.6cm}
+   \item Generator validated with the Sim group. See JIRA task \href{https://its.cern.ch/jira/browse/LHCBGAUSS-516}{\textcolor{blue}{here}}.
+  \end{itemize}
+}
+
+
+\frame{
+   \frametitle{The $1/(p_B p_h)$ reweighting}
+  \begin{itemize}
+     \item $B_d \to K\pi \mu \mu$ as an example.
+  \end{itemize}
+\vspace{0.6cm}
+   \begin{columns}
+      \column{0.5\textwidth}
+      \centering
+      PHSP:\\
+      \includegraphics[width=2.4in]{/home/hep/biplabd/cmtuser/analysis/test_XLL_Generator/plots/m_Kpi_q2_PHSP.pdf}
+      \column{0.5\textwidth}
+      \centering
+       PHSP re-wtd-ed:\\
+      \includegraphics[width=2.4in]{/home/hep/biplabd/cmtuser/analysis/test_XLL_Generator/plots/m_Kpi_q2_PHSP_pBpH.pdf}
+   \end{columns}
+}
+
+
+\frame{
+   \frametitle{Summary}
+  \begin{itemize}
+    \item New generator specifically tuned to efficiently generate events for $b \to hh\mu\mu$ analyses. 
+\vspace{0.6cm}
+    \item {\tt PHSP} generated $m(hh)$ spectrum {\em very} different from Data. This is the main problem.
+\vspace{0.6cm}
+    \item New generator \textcolor{red}{{\tt XLL}} is pseudo-{\tt PHSP} with some sculpting to retain \textcolor{red}{reasonable Data:MC ratio} thru'out.
+  \end{itemize}
+}
+
