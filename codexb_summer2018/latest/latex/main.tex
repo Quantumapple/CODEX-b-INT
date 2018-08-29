@@ -1,7 +1,7 @@
 %\pdfoutput=1
 % Uncomment line above if submitting to arXiv and using pdflatex
 
-% $Id: main.tex 122665 2018-08-08 12:56:59Z bdey $
+% $Id: main.tex 121191 2018-06-13 12:56:21Z pkoppenb $
 % ============================================================================
 % Purpose: Template for LHCb documents
 % Authors: Tomasz Skwarnicki, Roger Forty, Ulrik Egede
@@ -33,13 +33,13 @@
 % Define titles and authors here. It will then be used both in metadata and in
 % what is printed on the front page.
 \def\paperauthors{LHCb collaboration} % Leave as is for PAPER and CONF
-\def\paperasciititle{Template for writing LHCb papers} % Set ASCII title here
-\def\papertitle{Background measurement campagin for CODEX-b and Simulation} % Latex formatted title
+\def\paperasciititle{Background measurements and simulation for CODEX-b} % Set ASCII title here
+\def\papertitle{Background measurements and simulation for \cod} % Latex formatted title
 \def\paperkeywords{{High Energy Physics}, {LHCb}} % Comma separated list
 %\def\papercopyright{CERN on behalf of the LHCb collaboration}
-\def\papercopyright{\the\year\ CERN for the benefit of the LHCb collaboration} % new since 9/Apr/2018
-\def\paperlicence{CC-BY-4.0 licence}
-\def\paperlicenceurl{https://creativecommons.org/licenses/by/4.0/}
+%\def\papercopyright{\the\year\ CERN for the benefit of the LHCb collaboration} % new since 9/Apr/2018
+%\def\paperlicence{CC-BY-4.0 licence}
+%\def\paperlicenceurl{https://creativecommons.org/licenses/by/4.0/}
 
 
 \input{preamble}
@@ -95,66 +95,37 @@
 % edited independently.  This type of file organization is shown here.
 % 
 
+\input{list-of-changes}
+\clearpage
 \input{introduction}
-
+\clearpage
 \input{measurement}
-
+\clearpage
 \input{simulation}
-
+\clearpage
 \input{summary}
+\clearpage
 
-%\input{principles}
-
-%\input{layout}
-
-%\input{typography}
-
-%\input{jargon}
-
-%\input{detector}
-
-%\input{figures}
-
-%\input{reference}
 
 % Do not include this in any draft (just for information in the template)
 %\input{acknowledgements_intro}
-% Comment this in for paper drafts; do not include this in analysis note and conference reports
-%\input{acknowledgements}
 
-%\input{supplementary}
+% Comment this in for paper darfts; do not include this in analysis note and conference reports
+%\input{acknowledgements}
 
 %\input{appendix}
 
 % This should be taken out in the final paper
 %\input{supplementary-app}
 
-%\addcontentsline{toc}{section}{References}
-%\setboolean{inbibliography}{true}
-%\bibliographystyle{LHCb}
-%\bibliography{main,standard,LHCb-PAPER,LHCb-CONF,LHCb-DP,LHCb-TDR}
- 
- 
 \newpage
-%\input{LHCb_authorlist.tex}
+\addcontentsline{toc}{section}{References}
+\setboolean{inbibliography}{true}
+\bibliographystyle{LHCb}
+\bibliography{main,LHCb-PAPER,LHCb-CONF,LHCb-DP,LHCb-TDR}
+ 
 
-%The author list for journal publications is generated from the
-%Membership Database shortly after 'approval to go to paper' has been
-%given.  It will be sent to you by email shortly after a paper number
-%has been assigned.  The author list should be included in the draft used for 
-%first and second circulation, to allow new members of the collaboration to verify
-%that they have been included correctly. Occasionally a misspelled
-%name is corrected, or associated institutions become full members.
-%Therefore an updated author list will be sent to you after the final
-%EB review of the paper.  In case line numbering doesn't work well
-%after including the authorlist, try moving the \verb!\bigskip! after
-%the last author to a separate line.
-
-
-%The authorship for Conference Reports should be ``The LHCb
-%collaboration'', with a footnote giving the name(s) of the contact
-%author(s), but without the full list of collaboration names.
-
+\newpage
 
 
 \end{document}

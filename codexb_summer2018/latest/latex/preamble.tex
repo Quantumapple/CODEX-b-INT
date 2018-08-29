@@ -19,7 +19,7 @@
 \addtolength{\belowcaptionskip}{0.5em}
 
 \renewcommand{\textfraction}{0.01}
-\renewcommand{\floatpagefraction}{0.8} % changed from 0.99
+\renewcommand{\floatpagefraction}{0.99}
 \renewcommand{\topfraction}{0.9}
 \renewcommand{\bottomfraction}{0.9}
 
@@ -41,8 +41,17 @@
 
 %% Graphics
 \usepackage{graphicx}  % to include figures (can also use other packages)
+\usepackage{subfigure}
+\usepackage{rotating}
+\usepackage{multirow}
+\usepackage{comment}
 \usepackage{color}
 \usepackage{colortbl}
+\usepackage{slashbox}
+%\usepackage{fourier} 
+\usepackage{array}
+\usepackage{makecell}
+
 \graphicspath{{./figs/}} % Make Latex search fig subdir for figures
 \DeclareGraphicsExtensions{.pdf,.PDF,png,.PNG}
 
@@ -87,12 +96,14 @@ end#1\endcsname
             pdfauthor={\paperauthors},
             pdftitle={\paperasciititle},
             pdfkeywords={\paperkeywords},
-            pdfcopyright={Copyright (C) \papercopyright},
-            pdflicenseurl={\paperlicenceurl}]{hyperref}
+            %pdfcopyright={Copyright (C) \papercopyright},
+            %pdflicenseurl={\paperlicenceurl}
+           ]{hyperref}
 
 \usepackage[all]{hypcap} % Internal hyperlinks to floats.
 
 \input{lhcb-symbols-def} % Add in the predefined LHCb symbols
+\input{babarsym} % Add in the predefined LHCb symbols
 
 % Make this the last packages you include before the \begin{document}
 \usepackage{cite} % Allows for ranges in citations
