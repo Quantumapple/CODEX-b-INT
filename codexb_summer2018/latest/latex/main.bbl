@@ -1,0 +1,23 @@
+\ifx\mcitethebibliography\mciteundefinedmacro
+\PackageError{LHCb.bst}{mciteplus.sty has not been loaded}
+{This bibstyle requires the use of the mciteplus package.}\fi
+\providecommand{\href}[2]{#2}
+\begin{mcitethebibliography}{1}
+\mciteSetBstSublistMode{n}
+\mciteSetBstMaxWidthForm{subitem}{\alph{mcitesubitemcount})}
+\mciteSetBstSublistLabelBeginEnd{\mcitemaxwidthsubitemform\space}
+{\relax}{\relax}
+
+\bibitem{Gligorov:2017nwh}
+V.~V. Gligorov, S.~Knapen, M.~Papucci, and D.~J. Robinson,
+  \ifthenelse{\boolean{articletitles}}{\emph{{Searching for Long-lived
+  Particles: A Compact Detector for Exotics at LHCb}},
+  }{}\href{https://doi.org/10.1103/PhysRevD.97.015023}{Phys.\ Rev.\
+  \textbf{D97} (2018) 015023},
+  \href{http://arxiv.org/abs/1708.09395}{{\normalfont\ttfamily
+  arXiv:1708.09395}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\end{mcitethebibliography}
