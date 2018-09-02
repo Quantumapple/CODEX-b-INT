@@ -1,0 +1,148 @@
+%\documentclass[handout]{beamer}
+\documentclass[]{beamer}
+\mode<presentation>
+\usepackage{beamerthemesplit}
+\usepackage{subfigure}
+\usepackage{slashed}
+\usepackage{color}
+%\usepackage{pdffig}
+\usepackage{pgf}
+\usepackage{amsmath}
+\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage{fancybox}
+\usepackage{subfigure}
+\usepackage{multirow}
+\usepackage{sidecap} 
+\usepackage{psfrag}
+\usepackage{rotating}
+\usepackage{amsmath}
+\usepackage{tcolorbox}
+\usepackage{tikz}
+\usepackage{epstopdf}
+\usepackage{wasysym}
+\usepackage[normalem]{ulem}
+
+\makeatletter
+\def\UL@putbox{\ifx\UL@start\@empty \else % not inner
+  \vrule\@width\z@ \LA@penalty\@M
+  {\UL@skip\wd\UL@box \UL@leaders \kern-\UL@skip}%
+    \phantom{\box\UL@box}%
+  \fi}
+\makeatother
+
+% Variable width alert block
+\newenvironment<>{varalertblock}[2][0.9\textwidth]{%
+	\setlength{\textwidth}{#1}%
+	\setlength{\linewidth}{\textwidth}%
+	\begin{actionenv}#3%
+		\def\insertblocktitle{#2}%
+		\par%
+		\setbeamercolor{block body}{bg=green,fg=red}
+		%\setbeamercolor{local structure}{parent=alerted text}%
+		\usebeamertemplate{block alerted begin}}
+	{\par%
+		\usebeamertemplate{block alerted end}%
+\end{actionenv}}
+
+
+\definecolor{ah1col}{rgb}{0.84, 0.84, 0.84}
+\setbeamertemplate{navigation symbols}{}
+\renewcommand{\insertnavigation}[1]{}
+
+%\usetheme{AnnArbor}
+\usetheme{CambridgeUS}
+
+%\setbeamertemplate{headline}{}
+%\setbeamercolor{palette primary}{fg=yellow, bg=black}
+%\setbeamercolor{palette secondary}{fg=black, bg=white}
+%\setbeamercolor{palette tertiary}{fg=yellow, bg=green}
+
+
+% Uncomment these to make handouts
+%\usepackage{pgfpages}
+%\pgfpagesuselayout{4 on 1}[a4paper, border shrink=5mm]
+%\usetheme{default}
+
+%Font and colour commands
+\usefonttheme[onlylarge]{structuresmallcapsserif}
+\usefonttheme[onlysmall]{structurebold}
+\setbeamerfont{title}{shape=\itshape,family=\rmfamily}
+%\setbeamercolor{title}{fg=red!80!black, bg=red!20!white}
+\setbeamercolor{title}{fg=yellow, bg=black}
+%\setbeamercolor{block body}{bg=black, fg=white}
+%\usepackage{palatino}
+%\usepackage{charter}
+%\sffamily
+%bf
+
+%Uncomment this to make unshown listings slightly
+%visible
+%\setbeamercovered{transparent}
+
+
+%\title[{\tt DPF'13, UCSC}]{Exclusive $B\to X_{\{c,u\}} \ell^- \bar{\nu}$ angular analyses \\with hadronic tagging from $\babar$}
+%\title[]{Right-handed weak charged currents via exclusive \\ $\Bbar\to X_{\{c,u\}} \ell^- \bar{\nu}_\ell$ angular analyses \\with hadronic tagging from $\babar$}
+\title[{\tt CODEX-b, $3^{rd}$ LLP LHC workshop, CERN}]{{\LARGE LLP seaches with CODEX-b\\ {\rm {\small CO\textcolor{white}{mpact} D\textcolor{white}{etector for} EX\textcolor{white}{otics} \textcolor{white}{at LHC}b}}} \\ {\small {\tt \textcolor{white}{[1708.09395]}}}  }
+%\title[{\tt Physik-Institut, UZH}]{Right-handed weak charged currents via exclusive \\ $\Bbar\to X_{\{c,u\}} \ell^- \bar{\nu}_\ell$ angular analyses \\with hadronic tagging from $\babar$}
+
+\date[May $18^{th}$, 2018]{{\tt {\small Third workshop of the LHC LLP Community,\\ May  $16^{th}$-$18^{th}$ 2018, CERN}}}
+%\date[Nov. $26^{th}$, 2013]{{\tt Physik-Institut, UZH, Nov. $26^{th}$, 2013}}}
+
+%\subtitle[]{(BAD \# 2566)}
+
+\author[Biplab Dey]{\vspace{0.5cm}{\LARGE Biplab~Dey}\vspace{0.1cm}\\ {\large on behalf of the CODEX-b WG}}
+
+\institute[]{
+%\vspace{-0.9cm}
+
+{\flushbottom
+ %\hspace{-1cm}\includegraphics[width=1.7in]{figs/logos/uzh_logo.jpg}\hspace{0.5cm} 
+ %\includegraphics[width=0.75in]{figs/logos/lhcb_logo-300dpi.jpg} \hspace{1cm}
+ %\includegraphics[width=1.0in]{figs/logos/lhcb_logo-300dpi.jpg} \hspace{6cm}
+ %\includegraphics[width=0.7in]{figs/logos/infn_logo.jpeg}
+ \includegraphics[width=0.5in]{figs/logos/ccnu.jpg}
+% \includegraphics[width=0.9in]{figs/logos/SLAC_Logo.jpg}\hspace{1.6cm}
+% \includegraphics[width=0.32in]{figs/logos/babar_small_flag.jpg} \hspace{1.1cm}
+% \includegraphics[width=1.1in]{figs/logos/ucr_logo.jpg}
+}
+}
+
+\input{aliases}
+%\input{lhcb-symbols-def}
+\input{rgb}
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+%% outline page
+%\begin{frame}
+%  \frametitle{Outline}
+%  \tableofcontents
+%\end{frame}
+
+%\AtBeginSection[]
+%\AtBeginSubsection[]
+
+
+%\AtBeginSection[]{
+%\addtocounter{framenumber}{-1}
+%  \begin{frame}
+%    \frametitle{Outline}
+%    \tableofcontents[currentsection]
+%  \end{frame}
+%}
+
+
+\input{sections/introduction}
+
+
+%\input{sections/intro}
+%\input{sections/data}
+%\input{sections/angular}
+%\input{sections/summary}
+%\input{sections/backup}
+\end{document}
+    

@@ -1,0 +1,134 @@
+\section{Model-independent pentaquark evidence in $\Lb \to \jpsi pK$}
+
+
+\frame{
+	\frametitle{Pentaquarks in $\Lb \to \jpsi p \Km$ \href{http://arxiv.org/abs/1507.03414}{\scriptsize{PRL 115, 072001}}}
+	\vspace{-0.1cm}
+     \begin{itemize}
+       \item 2015: LHCb discovers two pentaquark states $P_c \to \jpsi p$.
+      \end{itemize}
+
+   \begin{columns}
+     \column{0.5\textwidth}
+          \begin{itemize}
+          	\item Amplitude fit in full $6d$. \textcolor{magenta}{$9~\sigma$} and \textcolor{blue}{$12~\sigma$} evidence for \textcolor{red}{two $P_c$} states.
+          	%\vspace{0.05cm}
+          	%\item \textcolor{red}{Phase}-motion distinctive of a \textcolor{red}{resonant} structure (for $P_c(4450)$).
+          \end{itemize}
+          \vspace{0.2cm}
+       \centering
+       \includegraphics[width=2in]{figs/pc/pc_4.pdf}
+     \column{0.5\textwidth}
+          \begin{itemize}
+          	%\item Amplitude fit in full $6d$. \textcolor{magenta}{$9~\sigma$} and \textcolor{blue}{$12~\sigma$} evidence for \textcolor{red}{two $P_c$} states.
+          	\vspace{-0.3cm}
+          	\item \textcolor{red}{Phase}-motion distinctive of a \textcolor{red}{resonant} structure (for $P_c(4450)$).
+          \end{itemize}
+          \vspace{0.2cm}
+       \includegraphics[width=2.3in]{figs/pc/Fig9.pdf}
+   \end{columns}
+       \vspace{0.2cm}
+
+     \begin{itemize}
+       \item However, the large number of \textcolor{red}{poorly} known \textcolor{red}{$\Lambda^\ast$} states makes the amplitude fits inherently model-dependent. 
+     \end{itemize}
+}
+
+
+\frame{
+    \frametitle{Model-independent $P_c$ evidence (NEW!) 
+    	\href{http://arxiv.org/abs/1604.05708}{\scriptsize 1604.05708}  }
+     \vspace{-0.3cm}
+     \begin{itemize}
+       \item Test \textcolor{red}{null hypothesis $H_0$}: no $P_c$'s are needed and $\Lambda^\ast$ resonances can alone explain data.
+       %\vspace{0.2cm}
+       %\item Adapted from $Z(4430)^+$ in $\Bz \to \psi(2S) \Kp \pim$: \href{https://arxiv.org/abs/0811.0564}{BaBar} and \href{https://arxiv.org/abs/1510.01951}{LHCb}.
+       \vspace{0.2cm}
+       \item Signature of each spin-$J$ $\Lambda^{\ast J} \to pK$: \textcolor{blue}{moments} expansion in \textcolor{red}{$\cos \theta_{\Lambda^\ast}$}. 
+     \end{itemize}
+       \vspace{-0.3cm}
+   \begin{columns}
+     \column{0.5\textwidth}
+     \begin{align}
+       \displaystyle \frac{d N}{d \cos \theta_{\Lambda^\ast}} &= \displaystyle \sum_{l=0}^{l_{\rm max}} \textcolor{blue}{\langle P^U_l \rangle} P_l(\textcolor{red}{\cos \theta_{\Lambda^\ast}}) \nonumber \\
+       \textcolor{blue}{\langle P^U_l \rangle}^k &= \displaystyle \sum_{i=0}^{n_{\rm cand}^k} (w_i/\epsilon_i) P_l(\textcolor{red}{\cos \theta_{\Lambda^\ast}^i}) \nonumber
+     \end{align},
+     \column{0.5\textwidth}
+       \centering
+       \includegraphics[width=2.3in]{figs/pc/theta_Lstar.pdf}
+       %\includegraphics[width=2.3in]{figs/pc/pc_7.pdf}
+       %\vspace{0.15cm}
+       % \textcolor{blue}{Data model: $H_{\rm data}$}
+   \end{columns}
+   \vspace{-0.45cm}
+        \begin{itemize}
+        	\item If $J_{\rm max}$ is the highest $\Lambda^{\ast J}$ spin in the $k^{th}$ $m_{pK}$ bin, $l_{\rm max} = 2 J_{\rm max}$.
+        	\vspace{0.1cm}
+        	\item Since the \textcolor{red}{Legendre} polynomials $P_l$ forms an \textcolor{red}{orthonormal} complete basis; $l_{\rm max}\to \infty$ can describe any distribution.
+        	\vspace{0.1cm}
+        	\item Data model: hypothesis \textcolor{red}{$H_1$} with ``large'' \textcolor{red}{$l_{\rm max} = 31$}.
+        \end{itemize}
+}
+
+\frame{
+   \frametitle{Testing the ``$\Lambda^\ast$-only'' hypothesis $H_0$ \href{http://arxiv.org/abs/1604.05708}{\scriptsize 1604.05708} }
+
+   \begin{columns}
+     \column{0.6\textwidth}
+     \begin{itemize}
+       \item For a given $m_{pK}$ bin, limit $J_{\rm max}$. 
+       \vspace{0.15cm}
+       \item High spins not expected at low $\Lambda^\ast$ masses. $l_{\rm max} = 2 J_{\rm max}$ 
+       \vspace{0.15cm}
+       \item Higher moments can only be produced by $P_c$ reflections.
+       \vspace{0.15cm}
+       \item $\Lambda^\ast$-only model \textcolor{red}{$H_0$}: \textcolor{red}{$l_{\rm max}(m_{pK})$}.
+     \end{itemize}
+     \column{0.45\textwidth}
+       \centering
+       \includegraphics[width=2.1in]{figs/pc/pc_6.pdf}\\
+       \vspace{0.15cm}
+   \end{columns}
+     \begin{itemize}
+       \item Test statistic for compatibility check between \textcolor{blue}{$l_{\rm max}=31$ ($H_1$)} and \textcolor{red}{$l_{\rm max}(m_{pK})$ ($H_0$)}, determined using toys: 
+     \end{itemize}
+     \begin{align}
+        \Delta(-2 lnL)\equiv \displaystyle -2 \sum_{i=1}^{N_{\rm events}} w_i \ln\left[\frac{PDF(m_{\jpsi p}|H_0)/I_{H_0}}{PDF(m_{\jpsi p}|H_1)/I_{H_1}} \right]\nonumber 
+     \end{align}
+}
+
+
+\frame{
+   \frametitle{Quantitative test of the null hypothesis $H_0$}
+      \vspace{-0.3cm}
+     \begin{itemize}
+       \item Toys generated with \textcolor{red}{$l_{\rm max}(m_{pK})$ ($H_0$)} show a \textcolor{red}{$9\sigma$ deviation} wrt Data. 
+       \vspace{0.2cm}
+       \item \textcolor{red}{Null} hypothesis \textcolor{red}{rejected} with minimal assumption on the $\Lambda^\ast$'s.
+       \vspace{0.2cm}
+       \item Consistent with the $P_c$ evidence from amplitude fits.
+     \end{itemize}
+   \begin{columns}
+     \column{0.45\textwidth}
+       \centering
+       \includegraphics[width=1.6in]{figs/pc/pc_8.pdf}
+     \column{0.55\textwidth}
+             \begin{center}
+             	\begin{tikzpicture}
+             	\node[anchor=south west,inner sep=0] (image) at (0,0) {\includegraphics[width=6cm]{figs/pc/pc_9.pdf}};
+             	\node[align=center,blue,font={\small}] at (4.3,3.5) {\href{http://arxiv.org/abs/1604.05708}{\tt 1604.05708}};
+             	\end{tikzpicture}
+             \end{center}
+     
+       %\centering
+       %\includegraphics[width=2.1in]{figs/pc/pc_9.pdf}
+   \end{columns}
+       \vspace{0.2cm}
+     \begin{itemize}
+       \item Same analysis for $Z_c(4200)^+$ claimed by \href{https://arxiv.org/abs/1408.6457}{Belle} in $B^0\to \jpsi \Kp \pim$ is in the pipeline.
+    \end{itemize}
+}
+
+
+
+
