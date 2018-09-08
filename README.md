@@ -5,7 +5,7 @@ CODEX-b Internal note with 2018 CERN summer student project
 Presentation at LHCb summer student talk <br>
 
 Figures download link: <br>
-https://cernbox.cern.ch/index.php/s/uijOx7nIXHjucYb
+https://cernbox.cern.ch/index.php/s/ItiKlileu9m3Zoj
 
 ## codexb-summer2018
 Summer student report and CODEX-b Internal note
