@@ -39,9 +39,8 @@ The test-bench includes cosmic stand, scope with extended functions (auto save w
 \end{figure}
 
 \subsection{Trigger}
-Simple 2x fold coincidence. 
-Distance between two scintillators 2\cm. 
-Discrimination (scope) threshold 30 mV.
+We used simple 2x fold coincidence and a distance between two scintillators 2\cm. 
+For this measurment, a discrimination (scope) threshold set as 30 mV.
 When first scintillator receive a signal and the other scintillator also receives a signal in 5 ns, scope counts.
 The scope automatically saved two waveforms from each scintillator and the number of mininum ionizing particles (mip) counted during the run.
 
@@ -57,7 +56,7 @@ The scope automatically saved two waveforms from each scintillator and the numbe
 
 The background measurement was taken at the LHCb cavern on D3 platform. The equipment had been set at 3 positions between DAQ racks and the concrete shield wall and the position between the \delphi and DAQ racks.
 We basically placed the scintillator stand parallel to the beam line but also rotated $45^{\circ}$ and perpendicular to the beam line.
-Fig 4. shows the positio
+Fig 4. shows positions and configurations of measurement.
 
 \begin{figure}[h]
 \centering
@@ -67,7 +66,7 @@ Fig 4. shows the positio
 }
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[ht]
   \begin{center}
     \begin{tabular}[t]{cc}
       \includegraphics[width=0.5\textwidth]{figs/INT/Initial.pdf} &
@@ -77,14 +76,16 @@ Fig 4. shows the positio
     \end{tabular}
   \end{center}
 \caption{
-    Photos from each position
+    Photos from each position at D3 platform
 }
 \end{figure}
 
 \subsection{Results}
 
 The measurement campagin spanning 17 days in July-Aug 2018.
-The scope performed 52036 triggers during the run.
+The scope performed 52036 triggers during the runi.
+The LHCb lumi rate was stable during the measurement.
+There was no beam until July 30th because of machine develop and power cut happened during measurement.
 
 \begin{figure}[h]
 \centering
@@ -93,6 +94,10 @@ The scope performed 52036 triggers during the run.
     Hit rate plots during the run based on 6 positions/configurations linear and log scale. Red dots mean the lumi rate of \lhcb, blue and green dots mean hit rates.
 }
 \end{figure}
+
+Below tables are shown hit rate based on measurement position and configuration.
+The rate of $pp$ collisions is 25~MHz.
+First table is about ambient background hit rate between fills and in MD without beam.
 
 \begin{center}
 \begin{tabular}{c|l|r}
@@ -107,6 +112,10 @@ The scope performed 52036 triggers during the run.
 \end{tabular}
 \end{center}
 
+The average hit rate of each position and configuration is 2~mHz. 
+It is indicated that background can be negligible. 
+However, during stable beam, hit rate increases a large.
+
 \begin{center}
 \begin{tabular}{c|l|r}
   Position & \hspace{0.9cm}Description & Hit rate [mHz] \\
@@ -119,3 +128,6 @@ The scope performed 52036 triggers during the run.
    P6 & shield + D3 racks, center, $45^\circ$ to beam& $ 15.71 \pm 0.33 $ \\ \hline
 \end{tabular}
 \end{center}
+
+By moving position from P1 to P2, from P2 to P4, we found that hit rate depends on $\eta$
+
