@@ -2,21 +2,31 @@
 \label{sec:Simulation}
 
 \subsection{Detector Description for High Energy Physics}
-I used Detector Description for High Energy Physics (DD4hep) standalone version.
+We used Detector Description for High Energy Physics (DD4hep) standalone version.
 DD4hep is a software framework to provide overall detector description for experiments.
 It offers a consistent description through a single source of detector information for simulation, reconstruction, analysis, etc.
-I learn how to make geometry: layer, station, super staion, envelope (hierachy).
-I define materials for our detector and CODEX-b geometry such as concrete, Herschel detector.
-Layer consists of silicon, station consists of aluminum. 
-There is a veto cone with two lead and one silicon. 
-Also just in front of CODEX-b, concrete wall exists to veto muons.
-First of all, using muon particle gun with high energy, test our geometry.
-And then using HepMC to generate pp collisions and do the same process as muon particle gun.
-I made hierachy system to build CODEX-b (envelop, super station, station, layer).
-I could check energy deposits and positions of CODEX-b hits.
+Additionally, DD4hep being developed for high luminosity large hadron collider (HL-LHC) detector simulation.
+During the internship, we built the geometry of CODEX-b constructing hierachy system.
+We designed concrete shield wall to block particles from particle gun or MC and herschel detector since we used as a scintillator for our measurement.
+For validation $\mu$ particle gun and minbias event had been used.
+We also checked energy deposits and positions of CODEX-b hits. 
 
+%I learn how to make geometry: layer, station, super staion, envelope (hierachy).
+%I define materials for our detector and CODEX-b geometry such as concrete, Herschel detector.
+%Layer consists of silicon, station consists of aluminum. 
+%There is a veto cone with two lead and one silicon. 
+%Also just in front of CODEX-b, concrete wall exists to veto muons.
+%First of all, using muon particle gun with high energy, test our geometry.
+%And then using HepMC to generate pp collisions and do the same process as muon particle gun.
+%I made hierachy system to build CODEX-b (envelop, super station, station, layer).
+%I could check energy deposits and positions of CODEX-b hits.
 
 \subsection{Simulation geometry}
+First geometry is the CODEX-b.
+CODEX-b consists of two parts face station and inner station.
+Based on the paper, face station 
+
+
 To make coincidence setup with test-bench, I made two Herschel plates with the same positions where all equipment have set.
 Two plates with 30 x 30~$cm^{2}$ size, 2~cm thickness.
 There is a concrete wall in front of scintillators.
