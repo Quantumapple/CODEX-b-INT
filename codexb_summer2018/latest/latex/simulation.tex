@@ -24,17 +24,20 @@ We also checked energy deposits and positions of CODEX-b hits.
 \subsection{Simulation geometry}
 First geometry is the CODEX-b.
 CODEX-b consists of two parts face station and inner station.
-Based on the paper, face station 
+Based on the paper, face station has 6 resistive plate chambers (RPCs) layers at 4~cm intervals with 1~cm granularity.
+The size of each layer is 10 x 10~$m^{2}$ and the thickness is 2~cm. 
+In this simulation we had been implemented layers as a tracker instead of RPCs.
+Inner station also has same configuration except number of layers.
+It will be equally spaced with triplets along the depth to minimize distance between reconstructed vertex and 1st measurement. 
 
-
-To make coincidence setup with test-bench, I made two Herschel plates with the same positions where all equipment have set.
-Two plates with 30 x 30~$cm^{2}$ size, 2~cm thickness.
-There is a concrete wall in front of scintillators.
-3~m thickness to suppress particles from pp collisions.
-Roughly in 1000 events, it has hits on scinitillators 4 - 9 events.
-There is a proposed veto cone. It consists of two lead absorbers and one silicon tracker.
-There is also concrete wall which blocks radiations (or particles) to reach CODEX-b box. 
-It has 3.2~m thickness.
+%To make coincidence setup with test-bench, I made two Herschel plates with the same positions where all equipment have set.
+%Two plates with 30 x 30~$cm^{2}$ size, 2~cm thickness.
+%There is a concrete wall in front of scintillators.
+%3~m thickness to suppress particles from pp collisions.
+%Roughly in 1000 events, it has hits on scinitillators 4 - 9 events.
+%There is a proposed veto cone. It consists of two lead absorbers and one silicon tracker.
+%There is also concrete wall which blocks radiations (or particles) to reach CODEX-b box. 
+%It has 3.2~m thickness.
 
 \begin{figure}[h]
 \begin{center}
@@ -48,6 +51,11 @@ It has 3.2~m thickness.
 }
 \end{figure}
 
+We also created a concrete shield wall with 3.2~m thickness.
+It was placed just front of CODEX-b box.
+Between the LHCb box and the concrete wall, there is a proposed veto cone.
+It contains two lead absorber and one active silicon layer.
+
 \subsection{Simulation status}
 
 We designed two different detectors based on similar geometry, one is the CODEX-b and the other is scintillator.
@@ -55,16 +63,17 @@ Both were tested with $\mu$ particle gun with 1\tev and the minimum bias events 
 
 \begin{figure}[h]
 \centering
-    \includegraphics[width=12cm]{figs/INT/Minbias.pdf}
+    \includegraphics[width=12cm]{figs/INT/Minbias.pdf} \\
+    \vspace{0.25cm} 
+    \includegraphics[width=12cm]{figs/INT/Scint.pdf}
 \caption{
     Validation of the CODEX-b simulation by removing the concrete shield wall with minimum bias events 
 }
 \end{figure}
 
-\begin{figure}[h]
-\centering
-    \includegraphics[width=12cm]{figs/INT/Scint.pdf}
-\caption{
-    Test of the scintialltor configuration with minimum bias events
-}
-\end{figure}
+%\begin{figure}[h]
+%\centering
+%\caption{
+%    Test of the scintialltor configuration with minimum bias events
+%}
+%\end{figure}
