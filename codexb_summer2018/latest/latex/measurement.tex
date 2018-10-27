@@ -1,8 +1,6 @@
 \section{Measurement}
 \label{sec:Measurement}
 
-\subsection{Background measurement}
-
 %Using two 30 X 30 X 2\cm wrapped plastic scintillators with photomultiplier tube (PMT) attached on iron test stand. 
 %Each PMTs receives 1.5 kV high voltage and 350 V bias voltage. 
 %Why do we set high voltage to 1.5 kV? Because rate increases with bigger high voltage, but it becomes flat when high voltage larger than 1.5 kV
@@ -46,7 +44,7 @@ The scope automatically saved two waveforms from each scintillator and the numbe
 
 \begin{figure}[h]
 \centering
-    \includegraphics[width=16cm]{figs/INT/waveform.pdf}
+    \includegraphics[width=8cm]{figs/INT/waveform.pdf}
 \caption{
     Trigger setup using coincidence occurence of two signals in 5~ns. 
 }
@@ -60,23 +58,9 @@ Fig 4. shows positions and configurations of measurement.
 
 \begin{figure}[h]
 \centering
-    \includegraphics[width=16cm]{figs/INT/configuration.pdf}
+    \includegraphics[width=8cm]{figs/INT/configuration.pdf}
 \caption{
     Four measurement positions at the LHCb cavern
-}
-\end{figure}
-
-\begin{figure}[ht]
-  \begin{center}
-    \begin{tabular}[t]{cc}
-      \includegraphics[width=0.5\textwidth]{figs/INT/Initial.pdf} &
-      \includegraphics[width=0.5\textwidth]{figs/INT/Back_central.pdf} \\
-      \includegraphics[width=0.5\textwidth]{figs/INT/Othercorner.pdf} &
-      \includegraphics[width=0.5\textwidth]{figs/INT/D3_front.pdf} \\
-    \end{tabular}
-  \end{center}
-\caption{
-    Photos from each position at D3 platform
 }
 \end{figure}
 
@@ -87,9 +71,10 @@ The scope performed 52036 triggers during the runi.
 The LHCb lumi rate was stable during the measurement.
 There was no beam until July 30th because of machine develop and power cut happened during measurement.
 
+\vspace{0.2cm}
 \begin{figure}[h]
 \centering
-    \includegraphics[width=14cm]{figs/INT/codexb_data_global.pdf}
+    \includegraphics[width=12cm]{figs/INT/codexb_data_global.pdf}
 \caption{
     Hit rate plots during the run based on 6 positions/configurations linear and log scale. Red dots mean the lumi rate of \lhcb, blue and green dots mean hit rates.
 }
@@ -99,6 +84,7 @@ Below tables are shown hit rate based on measurement position and configuration.
 The rate of $pp$ collisions is 25~MHz.
 First table is about ambient background hit rate between fills and in MD without beam.
 
+\begin{table}
 \begin{center}
 \begin{tabular}{c|l|r}
   Position & \hspace{2cm}Description & Hit rate [mHz] \\
@@ -110,12 +96,19 @@ First table is about ambient background hit rate between fills and in MD without
    P5 & shield + D3 racks, center, $\parallel$ to beam& $ 1.95\pm 0.03$ \\ \hline
    P6 & shield + D3 racks, center, $45^\circ$ to beam& $ 2.22\pm $ 0.02\\ \hline
 \end{tabular}
+\caption{
+    Pure background hit rates based on each configuration
+}
 \end{center}
+\end{table}
 
 The average hit rate of each position and configuration is 2~mHz. 
 It is indicated that background can be negligible. 
 However, during stable beam, hit rate increases a large.
+By moving position from P1 to P2, from P2 to P4, we found that hit rate depends on $\eta$
+Also, DAQ racks add some shielding effect based on the hit rates of P5 and P6.
 
+\begin{table}
 \begin{center}
 \begin{tabular}{c|l|r}
   Position & \hspace{0.9cm}Description & Hit rate [mHz] \\
@@ -127,7 +120,24 @@ However, during stable beam, hit rate increases a large.
    P5 & shield + D3 racks, center, $\parallel$ to beam& $ 73.58 \pm 1.18 $ \\ \hline
    P6 & shield + D3 racks, center, $45^\circ$ to beam& $ 15.71 \pm 0.33 $ \\ \hline
 \end{tabular}
+\caption{
+    Average hit rates during the stable beam measured by the Herschel detector
+}
 \end{center}
+\end{table}
 
-By moving position from P1 to P2, from P2 to P4, we found that hit rate depends on $\eta$
 
+\newpage
+\begin{figure}[h]
+  \begin{center}
+    \begin{tabular}[t]{cc}
+      \includegraphics[width=8.5cm]{figs/INT/Initial.pdf} &
+      \includegraphics[width=8.5cm]{figs/INT/Back_central.pdf} \\
+      \includegraphics[width=8.5cm]{figs/INT/Othercorner.pdf} &
+      \includegraphics[width=8.5cm]{figs/INT/D3_front.pdf} \\
+    \end{tabular}
+  \end{center}
+\caption{
+    Photos from each position at D3 platform
+}
+\end{figure}

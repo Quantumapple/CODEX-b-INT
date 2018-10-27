@@ -1,2 +1,30 @@
 \section{Summary}
 \label{sec:Summary}
+
+It was a very successful measurement campaign at D3 platform. 
+We measured hit rates of mip based on 2x fold coincidence trigger using Herschel detector and scope.
+We could also manage run and data by remote connect to scope.
+The average hit rates in the stable beam condition is much higher than the average hit rates of pure background.
+Based on this result, we can ignore pure background.
+The background rate just behind the concrete shield wall around 0.5~Hz over 900~$cm^{2}$ size scintillators.
+Also the hit rates have $\eta$ dependence when moving far from the impact point.
+The D3 racks behave like a shield from the P5 and P6 results but it is difficult to simulate because of complicated structure.
+
+About the simulation, DD4hep had been used to design CODEX-b and backgrond measurement campaign.
+Built a hierachy system to implement a bundle of 6 silicon layers (these layers are planed to change to RPC layers) and a triplet bundle.
+Reminding that CODEX-b geometry is a final version. 
+Detail information about components of designed CODEX-b using DD4hep is following. 
+The layer runs as a tracker which measure hit position of particles and the size is 10x10~$m^{2}$ with 2~cm thickness.
+Using similar hierachy system, background measurement campaign geometry had been made.
+The size of scintillator plate is 30x30~$cm^{2}$ and 2~cm thickness.
+The distance of them is 2~cm.
+The material of scintillator is the same as the Herschel detector.
+Veto cone and concrete shield wall were generated using DD4hep.
+
+All geometries were tested with $\mu$ particle gun with and without concrete shield wall.
+There were hits on the layers without shield wall and checked particles hit positions and deposit energy.
+Next step was tested with minimum bias events.
+
+
+
+
