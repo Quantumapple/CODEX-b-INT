@@ -25,7 +25,7 @@ We also checked energy deposits and positions of CODEX-b hits.
 First geometry is the CODEX-b.
 CODEX-b consists of two parts face station and inner station.
 Based on the paper, face station has 6 resistive plate chambers (RPCs) layers at 4~cm intervals with 1~cm granularity.
-The size of each layer is 10 x 10~$m^{2}$ and the thickness is 2~cm. 
+The size of each layer is $10 \times 10$~$m^{2}$ and the thickness is 2~cm. 
 In this simulation we had been implemented layers as a tracker instead of RPCs.
 Inner station also has same configuration except number of layers.
 It will be equally spaced with triplets along the depth to minimize distance between reconstructed vertex and 1st measurement. 
@@ -39,15 +39,18 @@ It will be equally spaced with triplets along the depth to minimize distance bet
 %There is also concrete wall which blocks radiations (or particles) to reach CODEX-b box. 
 %It has 3.2~m thickness.
 
-\begin{figure}[h]
-\begin{center}
-  \begin{tabular}[t]{cc}
-    \includegraphics[width=0.5\textwidth]{figs/INT/CODEXbBigGeo.pdf} &
-    \includegraphics[width=0.5\textwidth]{figs/INT/ZoomVersion.pdf}
-  \end{tabular}
-\end{center}
+\begin{figure}
+\centering
+\subfigure[]{
+\centering
+    \includegraphics[width=0.55\textwidth]{figs/INT/CODEXbBigGeo.pdf} 
+}
+\subfigure[]{
+\centering
+    \includegraphics[width=0.55\textwidth]{figs/INT/ZoomVersion.pdf}
+}
 \caption{
-    Wide view of CODEX-b simulation geometry
+    CODEX-b simulation geometry: (a) overall, (b) close-up view. 
 }
 \end{figure}
 
@@ -64,18 +67,18 @@ The material of scintillator was
 We designed two different detectors based on the paper and the measurement, the former is the CODEX-b and the latter is a scintillator.
 Both were tested with $\mu$ particle gun with 1\tev and the minimum bias events generated from the standalone Gauss. 
 
-\begin{figure}[h]
+\begin{figure}
 \centering
-    \begin{tabular}[t]{cc}
-    %\includegraphics[width=8cm]{figs/INT/Minbias.pdf} \\
-    \includegraphics[width=0.65\textwidth]{figs/INT/Minbias.pdf} \\
-    \vspace{0.2cm} 
-    %\includegraphics[width=8cm]{figs/INT/Scint.pdf}
-    \includegraphics[width=0.65\textwidth]{figs/INT/Scint.pdf}
-    \end{tabular}
-\caption{
-    Validation of the CODEX-b simulation by removing the concrete shield wall with minimum bias events 
+\subfigure[]{
+\centering
+    \includegraphics[width=0.9\textwidth]{figs/INT/Minbias.pdf}
 }
+\subfigure[]{
+\centering
+    \includegraphics[width=0.9\textwidth]{figs/INT/Scint.pdf}
+}
+\caption{
+    Validation of the {\tt DD4Hep} based simulation with the concrete shield wall removed using minimum bias events: (a) CODEX-b box, and (b) two-plate scintillators for measurement campaign.}
 \end{figure}
 
 %To check hits on the layers of the CODEX-b, we removed the concrete wall. Fig 8 upper plot is shown the results.
