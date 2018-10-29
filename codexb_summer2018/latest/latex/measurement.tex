@@ -23,7 +23,7 @@
 %Front D3 platform at central with parallel to beam line and make 45 degree with a beam line.
 
 \subsection{Test-bench}
-We used Herschel detector.
+We used scintillators from the Herschel detector.\cite{Gligorov:2017nwh}
 For PMT, model: R1828-01
 Because, it has high anode current upper limit, wide range of gain variation, fast time response to fit in 25 ns, large entry window to increase light yield, good single electron separation.
 The test-bench includes cosmic stand, scope with extended functions (auto save waveforms, coincidence logic), high voltage power supplies (1.5 kV, bias 350 V), current-voltage meter, laptop to remote connect to scope.
@@ -78,7 +78,7 @@ There was no beam until July 30th because of machine develop and power cut happe
 \centering
     \includegraphics[width=12cm]{figs/INT/codexb_data_global.pdf}
 \caption{
-    Hit rate plots during the run based on 6 positions/configurations linear and log scale. Red dots mean the lumi rate of \lhcb, blue and green dots mean hit rates.
+    Hit rate plots during the run based on 6 positions/configurations linear and log scale. Red dots mean the lumi rate of \lhcb, blue and green dots mean hit rates. The results are not approved by the LHCb collaboration.
 }
 \end{figure}
 
@@ -99,7 +99,7 @@ First table is about ambient background hit rate between fills and in MD without
    P6 & shield + D3 racks, center, $45^\circ$ to beam& $ 2.22\pm $ 0.02\\ \hline
 \end{tabular}
 \caption{
-    Pure background hit rates based on each configuration
+    Background hit rates based on each configuration when beam is offline 
 }
 \end{center}
 \end{table}
@@ -128,18 +128,49 @@ Also, DAQ racks add some shielding effect based on the hit rates of P5 and P6.
 \end{center}
 \end{table}
 
-
 \newpage
 \begin{figure}[h]
-  \begin{center}
-    \begin{tabular}[t]{cc}
-      \includegraphics[width=0.5\textwidth]{figs/INT/Initial.pdf} &
-      \includegraphics[width=0.5\textwidth]{figs/INT/Back_central.pdf} \\
-      \includegraphics[width=0.5\textwidth]{figs/INT/Othercorner.pdf} &
-      \includegraphics[width=0.5\textwidth]{figs/INT/D3_front.pdf} \\
-    \end{tabular}
-  \end{center}
+    \centering
+    \begin{subfigure}{}
+        \centering
+        \includegraphics[width=0.5\columnwidth]{figs/INT/Initial.pdf} 
+        \caption{$\parallel$ to the beam line (P1)}
+        \label{fig:sub1}
+    \end{subfigure}
+    \begin{subfigure}{}
+        \centering
+        \includegraphics[width=0.5\columnwidth]{figs/INT/Back_central.pdf}
+        \caption{$\perp$ to the beam line (P3)}
+        \label{fig:sub2}
+    \end{subfigure}
+    \begin{subfigure}{}
+        \centering
+        \includegraphics[width=0.5\columnwidth]{figs/INT/Othercorner.pdf} 
+        \caption{$\parallel$ to the beam line (P4)}
+        \label{fig:sub3}
+    \end{subfigure}
+    \begin{subfigure}{}
+        \centering
+        \includegraphics[width=0.5\columnwidth]{figs/INT/D3_front.pdf} 
+        \caption{$45^\circ$ to the beam line (P6)}
+        \label{fig:sub4}
+    \end{subfigure}
 \caption{
-    Photos from each position at D3 platform
+    Photos of detecting equipment at the measurement position on the D3 platform
 }
 \end{figure}
+
+
+%\begin{figure}[h]
+%  \begin{center}
+%    \begin{tabular}[t]{cc}
+%      \includegraphics[width=0.5\textwidth]{figs/INT/Initial.pdf} &
+%      \includegraphics[width=0.5\textwidth]{figs/INT/Back_central.pdf} \\
+%      \includegraphics[width=0.5\textwidth]{figs/INT/Othercorner.pdf} &
+%      \includegraphics[width=0.5\textwidth]{figs/INT/D3_front.pdf} \\
+%    \end{tabular}
+%  \end{center}
+%\caption{
+%    Photos from each position at D3 platform
+%}
+%\end{figure}
