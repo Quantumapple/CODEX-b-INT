@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2018.8.8)  29 OCT 2018 21:59
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2018.8.8)  29 OCT 2018 22:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -890,9 +890,9 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.46 \clearpage
+l.48 \clearpage
                 [1]) (./introduction.tex
-<figs/INT/lhcb_cavern.pdf, id=85, 311.1625pt x 209.78375pt>
+<figs/INT/lhcb_cavern.pdf, id=86, 311.1625pt x 209.78375pt>
 File: figs/INT/lhcb_cavern.pdf Graphic file (type pdf)
 
 <use figs/INT/lhcb_cavern.pdf>
@@ -902,14 +902,14 @@ Package pdftex.def Info: figs/INT/lhcb_cavern.pdf used on input line 35.
 
 
  <./figs/INT/lhcb_cavern.pdf>]
-(./measurement.tex <figs/INT/Tools.png, id=102, 259.7203pt x 342.5297pt>
+(./measurement.tex <figs/INT/Tools.png, id=103, 259.7203pt x 342.5297pt>
 File: figs/INT/Tools.png Graphic file (type png)
 
 <use figs/INT/Tools.png>
 Package pdftex.def Info: figs/INT/Tools.png used on input line 33.
 (pdftex.def)             Requested size: 156.49014pt x 206.38177pt.
 
-<figs/INT/waveform.pdf, id=104, 739.74323pt x 384.08374pt>
+<figs/INT/waveform.pdf, id=105, 739.74323pt x 384.08374pt>
 File: figs/INT/waveform.pdf Graphic file (type pdf)
 
 <use figs/INT/waveform.pdf>
@@ -918,14 +918,14 @@ Package pdftex.def Info: figs/INT/waveform.pdf used on input line 49.
  [3
 
  <./figs/INT/Tools.png> <./figs/INT/waveform.pdf>] <figs/INT/configuration.pdf,
- id=127, 796.6487pt x 512.12117pt>
+ id=128, 796.6487pt x 512.12117pt>
 File: figs/INT/configuration.pdf Graphic file (type pdf)
 
 <use figs/INT/configuration.pdf>
 Package pdftex.def Info: figs/INT/configuration.pdf used on input line 63.
 (pdftex.def)             Requested size: 227.62204pt x 146.32332pt.
 
-<figs/INT/codexb_data_global.pdf, id=128, 404.51125pt x 180.675pt>
+<figs/INT/codexb_data_global.pdf, id=129, 404.51125pt x 180.675pt>
 File: figs/INT/codexb_data_global.pdf Graphic file (type pdf)
 
 <use figs/INT/codexb_data_global.pdf>
@@ -936,28 +936,28 @@ Package pdftex.def Info: figs/INT/codexb_data_global.pdf used on input line 79.
 
 pdfTeX warning: pdflatex (file ./figs/INT/codexb_data_global.pdf): PDF inclusio
 n: multiple pdfs with page group included in a single page
->] [5] <figs/INT/Initial.pdf, id=168, 455.21564pt x 625.93216pt>
+>] [5] <figs/INT/Initial.pdf, id=169, 455.21564pt x 625.93216pt>
 File: figs/INT/Initial.pdf Graphic file (type pdf)
 
 <use figs/INT/Initial.pdf>
 Package pdftex.def Info: figs/INT/Initial.pdf used on input line 136.
 (pdftex.def)             Requested size: 226.48395pt x 311.42761pt.
 
-<figs/INT/Back_central.pdf, id=169, 455.21564pt x 625.93216pt>
+<figs/INT/Back_central.pdf, id=170, 455.21564pt x 625.93216pt>
 File: figs/INT/Back_central.pdf Graphic file (type pdf)
 
 <use figs/INT/Back_central.pdf>
 Package pdftex.def Info: figs/INT/Back_central.pdf used on input line 142.
 (pdftex.def)             Requested size: 226.48395pt x 311.42761pt.
 
-<figs/INT/Othercorner.pdf, id=170, 455.21564pt x 625.93216pt>
+<figs/INT/Othercorner.pdf, id=171, 455.21564pt x 625.93216pt>
 File: figs/INT/Othercorner.pdf Graphic file (type pdf)
 
 <use figs/INT/Othercorner.pdf>
 Package pdftex.def Info: figs/INT/Othercorner.pdf used on input line 148.
 (pdftex.def)             Requested size: 226.48395pt x 311.42761pt.
 
-<figs/INT/D3_front.pdf, id=171, 455.21564pt x 625.93216pt>
+<figs/INT/D3_front.pdf, id=172, 455.21564pt x 625.93216pt>
 File: figs/INT/D3_front.pdf Graphic file (type pdf)
 
 <use figs/INT/D3_front.pdf>
@@ -983,14 +983,14 @@ iple pdfs with page group included in a single page
 pdfTeX warning: pdflatex (file ./figs/INT/D3_front.pdf): PDF inclusion: multipl
 e pdfs with page group included in a single page
 >] (./simulation.tex
-<figs/INT/CODEXbBigGeo.pdf, id=240, 142.23532pt x 142.23532pt>
+<figs/INT/CODEXbBigGeo.pdf, id=241, 142.23532pt x 142.23532pt>
 File: figs/INT/CODEXbBigGeo.pdf Graphic file (type pdf)
 
 <use figs/INT/CODEXbBigGeo.pdf>
 Package pdftex.def Info: figs/INT/CODEXbBigGeo.pdf used on input line 45.
 (pdftex.def)             Requested size: 226.48395pt x 226.48297pt.
 
-<figs/INT/ZoomVersion.pdf, id=241, 449.5251pt x 448.10245pt>
+<figs/INT/ZoomVersion.pdf, id=242, 449.5251pt x 448.10245pt>
 File: figs/INT/ZoomVersion.pdf Graphic file (type pdf)
 
 <use figs/INT/ZoomVersion.pdf>
@@ -1007,14 +1007,14 @@ Overfull \hbox (24.0pt too wide) in paragraph at lines 44--48
 
 pdfTeX warning: pdflatex (file ./figs/INT/ZoomVersion.pdf): PDF inclusion: mult
 iple pdfs with page group included in a single page
->] <figs/INT/Minbias.pdf, id=278, 569.0267pt x 426.7629pt>
+>] <figs/INT/Minbias.pdf, id=279, 569.0267pt x 426.7629pt>
 File: figs/INT/Minbias.pdf Graphic file (type pdf)
 
 <use figs/INT/Minbias.pdf>
 Package pdftex.def Info: figs/INT/Minbias.pdf used on input line 71.
 (pdftex.def)             Requested size: 294.42636pt x 220.82399pt.
 
-<figs/INT/Scint.pdf, id=279, 569.0267pt x 426.7629pt>
+<figs/INT/Scint.pdf, id=280, 569.0267pt x 426.7629pt>
 File: figs/INT/Scint.pdf Graphic file (type pdf)
  <use figs/INT/Scint.pdf>
 Package pdftex.def Info: figs/INT/Scint.pdf used on input line 74.
@@ -1047,29 +1047,30 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 133.
  ) 
 Here is how much of TeX's memory you used:
- 20123 strings out of 494820
- 341502 string characters out of 3178050
+ 20129 strings out of 494820
+ 341548 string characters out of 3178050
  459324 words of memory out of 3000000
  22760 multiletter control sequences out of 15000+200000
- 19187 words of font info for 105 fonts, out of 3000000 for 9000
+ 19340 words of font info for 108 fonts, out of 3000000 for 9000
  198 hyphenation exceptions out of 8191
  63i,13n,92p,419b,436s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti
-10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on main.pdf (13 pages, 5047240 bytes).
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
+y8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on main.pdf (13 pages, 5056116 bytes).
 PDF statistics:
- 405 PDF objects out of 1000 (max. 8388607)
- 288 compressed objects within 3 object streams
+ 409 PDF objects out of 1000 (max. 8388607)
+ 291 compressed objects within 3 object streams
  43 named destinations out of 1000 (max. 500000)
  18631 words of extra memory for PDF output out of 20736 (max. 10000000)
 
