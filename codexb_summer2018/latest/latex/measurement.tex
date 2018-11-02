@@ -23,16 +23,18 @@
 %Front D3 platform at central with parallel to beam line and make 45 degree with a beam line.
 
 \subsection{Test-bench}
-We used scintillators from the Herschel detector.\cite{Gligorov:2017nwh}
-For PMT, model: R1828-01
-Because, it has high anode current upper limit, wide range of gain variation, fast time response to fit in 25 ns, large entry window to increase light yield, good single electron separation.
-The test-bench includes cosmic stand, scope with extended functions (auto save waveforms, coincidence logic), high voltage power supplies (1.5 kV, bias 350 V), current-voltage meter, laptop to remote connect to scope.
+We used scintillators from the Herschel detector.
+%\cite{Gligorov:2017nwh}
+%For PMT, model: R1828-01
+In this measurement, we used photomultiplier tubes (PMT) R1828-01 model made from HAMAMATSU.
+Because it has high anode current upper limit, wide range of gain variation, fast time response to fit in 25 ns, large entry window to increase light yield, good single electron separation.
+The test-bench includes cosmic stand, scope with extended functions (auto save waveforms, coincidence logic), high voltage power supplies (1.5 kV, bias 350 V), current-voltage meter and scintillators from the Herschel detector.
 
-\begin{figure}[h]
+\begin{figure}
 \centering
-    \includegraphics[width=5.5cm]{figs/INT/Tools.png} 
+    \includegraphics[width=10cm]{figs/INT/Tools.png} 
 \caption{ 
-    Test-bench photo
+    Test-bench assembly in the VeloPix lab, showing the Herschel scintillators, the DAQ system comprising a NIM crate and oscilloscope.
 }
 \end{figure}
 
@@ -44,25 +46,25 @@ The scope automatically saved two waveforms from each scintillator and the numbe
 The test-bench and trigger had been tested with cosmic rays in the lab.
 Figure 3 is a scope screen when triggering the cosmic rays.
 
-\begin{figure}[!h]
+\begin{figure}
 \centering
-    \includegraphics[width=6cm]{figs/INT/waveform.pdf}
+    \includegraphics[width=16cm]{figs/INT/waveform.pdf}
 \caption{
-    Trigger setup using coincidence occurence of two signals in 5~ns. 
+    Trigger setup using coincidence occurence of signals from the two scintillator PMT's within 5~ns. 
 }
 \end{figure}
 
-\subsection{Detail Configuration}
+\subsection{Measurements positions and configurations on the D3 platform}
 
 The background measurement was taken at the LHCb cavern on D3 platform. The equipment had been set at 3 positions between DAQ racks and the concrete shield wall and the position between the \delphi and DAQ racks.
 We basically placed the scintillator stand parallel to the beam line but also rotated $45^{\circ}$ and perpendicular to the beam line.
 Fig 4. shows positions and configurations of measurement.
 
-\begin{figure}[h]
+\begin{figure}
 \centering
-    \includegraphics[width=8cm]{figs/INT/configuration.pdf}
+    \includegraphics[width=16cm]{figs/INT/configuration.pdf}
 \caption{
-    Four measurement positions at the LHCb cavern
+    The four measurement positions on the D3 level inside the LHCb cavern. The configurations are labelled from P1-P6.
 }
 \end{figure}
 
@@ -73,10 +75,9 @@ The scope performed 52036 triggers during the run.
 The LHCb lumi rate was stable during the measurement.
 There was no beam until July 30th because of machine develop and power cut happened during measurement.
 
-\vspace{0.2cm}
-\begin{figure}[h]
+\begin{figure}
 \centering
-    \includegraphics[width=12cm]{figs/INT/codexb_data_global.pdf}
+    \includegraphics[width=16cm]{figs/INT/codexb_data_global.pdf}
 \caption{
     Hit rate plots during the run based on 6 positions/configurations linear and log scale. Red dots mean the lumi rate of \lhcb, blue and green dots mean hit rates. The results are not approved by the LHCb collaboration.
 }
@@ -98,8 +99,8 @@ First table is about ambient background hit rate between fills and in MD without
    P5 & shield + D3 racks, center, $\parallel$ to beam& $ 1.95\pm 0.03$ \\ \hline
    P6 & shield + D3 racks, center, $45^\circ$ to beam& $ 2.22\pm $ 0.02\\ \hline
 \end{tabular}
-\caption{
-    Background hit rates based on each configuration when beam is offline 
+\caption{\label{table:rate_no_beam}
+    Background hit rates based on each configuration when the beam is off.
 }
 \end{center}
 \end{table}
@@ -122,41 +123,33 @@ Also, DAQ racks add some shielding effect based on the hit rates of P5 and P6.
    P5 & shield + D3 racks, center, $\parallel$ to beam& $ 73.58 \pm 1.18 $ \\ \hline
    P6 & shield + D3 racks, center, $45^\circ$ to beam& $ 15.71 \pm 0.33 $ \\ \hline
 \end{tabular}
-\caption{
-    Average hit rates during the stable beam measured by the Herschel detector
+\caption{\label{table:rate_stable_beam}
+    Average hit rates measured during stable beam, at various configurations.
 }
 \end{center}
 \end{table}
 
 \newpage
-\begin{figure}[h]
-    \centering
-    \begin{subfigure}{}
-        \centering
-        \includegraphics[width=0.5\columnwidth]{figs/INT/Initial.pdf} 
-        \caption{$\parallel$ to the beam line (P1)}
-        \label{fig:sub1}
-    \end{subfigure}
-    \begin{subfigure}{}
-        \centering
-        \includegraphics[width=0.5\columnwidth]{figs/INT/Back_central.pdf}
-        \caption{$\perp$ to the beam line (P3)}
-        \label{fig:sub2}
-    \end{subfigure}
-    \begin{subfigure}{}
-        \centering
-        \includegraphics[width=0.5\columnwidth]{figs/INT/Othercorner.pdf} 
-        \caption{$\parallel$ to the beam line (P4)}
-        \label{fig:sub3}
-    \end{subfigure}
-    \begin{subfigure}{}
-        \centering
-        \includegraphics[width=0.5\columnwidth]{figs/INT/D3_front.pdf} 
-        \caption{$45^\circ$ to the beam line (P6)}
-        \label{fig:sub4}
-    \end{subfigure}
-\caption{
-    Photos of detecting equipment at the measurement position on the D3 platform
+\begin{figure}
+\centering
+\subfigure[]{
+\centering
+   \includegraphics[width=0.4\columnwidth]{figs/INT/Initial.pdf} 
+}
+\subfigure[]{
+\centering
+   \includegraphics[width=0.4\columnwidth]{figs/INT/Back_central.pdf}
+}
+\subfigure[]{
+\centering
+   \includegraphics[width=0.4\columnwidth]{figs/INT/Othercorner.pdf} 
+}
+\subfigure[]{
+\centering
+   \includegraphics[width=0.4\columnwidth]{figs/INT/D3_front.pdf} 
+}
+\caption{\label{fig:det_equip}
+    Photos of the equipment setup at various positions on the D3 platform: (a) P1, (b) P3, (c) P4, and (d) P6.
 }
 \end{figure}
 
