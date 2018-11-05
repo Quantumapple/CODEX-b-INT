@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2018.8.8)  30 OCT 2018 21:00
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2018.8.8)  5 NOV 2018 22:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -865,7 +865,7 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-eur.cfg
 File: mt-eur.cfg 2006/07/31 v1.1 microtype config. file: AMS Euler Roman (RS)
 )
-<figs/lhcb-logo.pdf, id=59, 1424.32124pt x 855.195pt>
+<figs/lhcb-logo.pdf, id=63, 1424.32124pt x 855.195pt>
 File: figs/lhcb-logo.pdf Graphic file (type pdf)
  <use figs/lhcb-logo.pdf>
 Package pdftex.def Info: figs/lhcb-logo.pdf used on input line 20.
@@ -894,9 +894,9 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.58 \clearpage
+l.59 \clearpage
                 [1]) (./introduction.tex
-<figs/INT/lhcb_cavern.pdf, id=84, 311.1625pt x 209.78375pt>
+<figs/INT/lhcb_cavern.pdf, id=88, 311.1625pt x 209.78375pt>
 File: figs/INT/lhcb_cavern.pdf Graphic file (type pdf)
 
 <use figs/INT/lhcb_cavern.pdf>
@@ -905,14 +905,14 @@ Package pdftex.def Info: figs/INT/lhcb_cavern.pdf used on input line 19.
  [2
 
  <./figs/INT/lhcb_cavern.pdf>])
-(./measurement.tex <figs/INT/Tools.png, id=99, 259.7203pt x 342.5297pt>
+(./measurement.tex <figs/INT/Tools.png, id=103, 259.7203pt x 342.5297pt>
 File: figs/INT/Tools.png Graphic file (type png)
 
 <use figs/INT/Tools.png>
 Package pdftex.def Info: figs/INT/Tools.png used on input line 35.
 (pdftex.def)             Requested size: 284.52756pt x 375.24721pt.
- [3 <./figs/INT/Tools.png>]
-<figs/INT/waveform.pdf, id=107, 739.74323pt x 384.08374pt>
+
+<figs/INT/waveform.pdf, id=105, 739.74323pt x 384.08374pt>
 File: figs/INT/waveform.pdf Graphic file (type pdf)
 
 <use figs/INT/waveform.pdf>
@@ -923,7 +923,7 @@ Overfull \hbox (2.27618pt too wide) in paragraph at lines 51--54
  [][] 
  []
 
-<figs/INT/configuration.pdf, id=108, 796.6487pt x 512.12117pt>
+<figs/INT/configuration.pdf, id=106, 796.6487pt x 512.12117pt>
 File: figs/INT/configuration.pdf Graphic file (type pdf)
 
 <use figs/INT/configuration.pdf>
@@ -934,7 +934,7 @@ Overfull \hbox (2.27618pt too wide) in paragraph at lines 65--68
  [][] 
  []
 
-<figs/INT/codexb_data_global.pdf, id=109, 404.51125pt x 180.675pt>
+[3] <figs/INT/codexb_data_global.pdf, id=112, 404.51125pt x 180.675pt>
 File: figs/INT/codexb_data_global.pdf Graphic file (type pdf)
 
 <use figs/INT/codexb_data_global.pdf>
@@ -946,39 +946,40 @@ Overfull \hbox (2.27618pt too wide) in paragraph at lines 80--83
  [][] 
  []
 
-[4 <./figs/INT/waveform.pdf>] [5 <./figs/INT/configuration.pdf> <./figs/INT/cod
-exb_data_global.pdf
-
-pdfTeX warning: pdflatex (file ./figs/INT/codexb_data_global.pdf): PDF inclusio
-n: multiple pdfs with page group included in a single page
->] [6] <figs/INT/Initial.pdf, id=171, 455.21564pt x 625.93216pt>
+[4 <./figs/INT/Tools.png>]
+<figs/INT/Initial.pdf, id=119, 455.21564pt x 625.93216pt>
 File: figs/INT/Initial.pdf Graphic file (type pdf)
 
 <use figs/INT/Initial.pdf>
 Package pdftex.def Info: figs/INT/Initial.pdf used on input line 138.
 (pdftex.def)             Requested size: 181.18439pt x 249.13635pt.
 
-<figs/INT/Back_central.pdf, id=172, 455.21564pt x 625.93216pt>
+<figs/INT/Back_central.pdf, id=120, 455.21564pt x 625.93216pt>
 File: figs/INT/Back_central.pdf Graphic file (type pdf)
 
 <use figs/INT/Back_central.pdf>
 Package pdftex.def Info: figs/INT/Back_central.pdf used on input line 142.
 (pdftex.def)             Requested size: 181.18439pt x 249.13635pt.
 
-<figs/INT/Othercorner.pdf, id=173, 455.21564pt x 625.93216pt>
+<figs/INT/Othercorner.pdf, id=121, 455.21564pt x 625.93216pt>
 File: figs/INT/Othercorner.pdf Graphic file (type pdf)
 
 <use figs/INT/Othercorner.pdf>
 Package pdftex.def Info: figs/INT/Othercorner.pdf used on input line 146.
 (pdftex.def)             Requested size: 181.18439pt x 249.13635pt.
 
-<figs/INT/D3_front.pdf, id=174, 455.21564pt x 625.93216pt>
+<figs/INT/D3_front.pdf, id=122, 455.21564pt x 625.93216pt>
 File: figs/INT/D3_front.pdf Graphic file (type pdf)
 
 <use figs/INT/D3_front.pdf>
 Package pdftex.def Info: figs/INT/D3_front.pdf used on input line 150.
 (pdftex.def)             Requested size: 181.18439pt x 249.13635pt.
-) (./simulation.tex [7 <./figs/INT/Initial.pdf> <./figs/INT/Back_central.pdf
+) (./simulation.tex [5 <./figs/INT/waveform.pdf> <./figs/INT/configuration.pdf
+
+pdfTeX warning: pdflatex (file ./figs/INT/configuration.pdf): PDF inclusion: mu
+ltiple pdfs with page group included in a single page
+>] [6 <./figs/INT/codexb_data_global.pdf>] [7 <./figs/INT/Initial.pdf> <./figs/
+INT/Back_central.pdf
 
 pdfTeX warning: pdflatex (file ./figs/INT/Back_central.pdf): PDF inclusion: mul
 tiple pdfs with page group included in a single page
@@ -990,28 +991,28 @@ iple pdfs with page group included in a single page
 
 pdfTeX warning: pdflatex (file ./figs/INT/D3_front.pdf): PDF inclusion: multipl
 e pdfs with page group included in a single page
->] <figs/INT/CODEXbBigGeo.pdf, id=243, 142.23532pt x 142.23532pt>
+>] <figs/INT/CODEXbBigGeo.pdf, id=247, 142.23532pt x 142.23532pt>
 File: figs/INT/CODEXbBigGeo.pdf Graphic file (type pdf)
 
 <use figs/INT/CODEXbBigGeo.pdf>
 Package pdftex.def Info: figs/INT/CODEXbBigGeo.pdf used on input line 47.
 (pdftex.def)             Requested size: 249.13371pt x 249.13474pt.
 
-<figs/INT/ZoomVersion.pdf, id=244, 449.5251pt x 448.10245pt>
+<figs/INT/ZoomVersion.pdf, id=248, 449.5251pt x 448.10245pt>
 File: figs/INT/ZoomVersion.pdf Graphic file (type pdf)
 
 <use figs/INT/ZoomVersion.pdf>
 Package pdftex.def Info: figs/INT/ZoomVersion.pdf used on input line 51.
 (pdftex.def)             Requested size: 249.13371pt x 248.34424pt.
 
-<figs/INT/Minbias.pdf, id=245, 569.0267pt x 426.7629pt>
+<figs/INT/Minbias.pdf, id=249, 569.0267pt x 426.7629pt>
 File: figs/INT/Minbias.pdf Graphic file (type pdf)
 
 <use figs/INT/Minbias.pdf>
 Package pdftex.def Info: figs/INT/Minbias.pdf used on input line 75.
 (pdftex.def)             Requested size: 407.66833pt x 305.7583pt.
 
-<figs/INT/Scint.pdf, id=246, 569.0267pt x 426.7629pt>
+<figs/INT/Scint.pdf, id=250, 569.0267pt x 426.7629pt>
 File: figs/INT/Scint.pdf Graphic file (type pdf)
  <use figs/INT/Scint.pdf>
 Package pdftex.def Info: figs/INT/Scint.pdf used on input line 79.
@@ -1036,15 +1037,15 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 129.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 129.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 129.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 681C8E928FDED4E885FCB3EDA704F9C1;838.
+(rerunfilecheck)             Checksum: FDA8C0563575B5592FD6C943D84E9181;938.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 129.
  ) 
 Here is how much of TeX's memory you used:
- 20140 strings out of 494820
- 341692 string characters out of 3178050
+ 20144 strings out of 494820
+ 341736 string characters out of 3178050
  462439 words of memory out of 3000000
- 22759 multiletter control sequences out of 15000+200000
- 19714 words of font info for 113 fonts, out of 3000000 for 9000
+ 22760 multiletter control sequences out of 15000+200000
+ 19763 words of font info for 114 fonts, out of 3000000 for 9000
  198 hyphenation exceptions out of 8191
  63i,12n,92p,1042b,434s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
@@ -1061,10 +1062,10 @@ y8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
 ></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on main.pdf (13 pages, 5067955 bytes).
+Output written on main.pdf (13 pages, 5068865 bytes).
 PDF statistics:
- 414 PDF objects out of 1000 (max. 8388607)
- 294 compressed objects within 3 object streams
- 46 named destinations out of 1000 (max. 500000)
- 19135 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 418 PDF objects out of 1000 (max. 8388607)
+ 298 compressed objects within 3 object streams
+ 47 named destinations out of 1000 (max. 500000)
+ 19143 words of extra memory for PDF output out of 20736 (max. 10000000)
 
