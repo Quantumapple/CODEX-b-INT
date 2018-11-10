@@ -20,4 +20,82 @@ V.~V. Gligorov, S.~Knapen, M.~Papucci, and D.~J. Robinson,
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
+\bibitem{pich_talk}
+A.~Pich, \ifthenelse{\boolean{articletitles}}{\emph{Flavour anomalies}, }{}
+  Implications of LHCb measurements and future prospects, 2018\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Curtin:2018mvb}
+D.~Curtin {\em et~al.}, \ifthenelse{\boolean{articletitles}}{\emph{{Long-Lived
+  Particles at the Energy Frontier: The MATHUSLA Physics Case}},
+  }{}\href{http://arxiv.org/abs/1806.07396}{{\normalfont\ttfamily
+  arXiv:1806.07396}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Chou:2016lxi}
+J.~P. Chou, D.~Curtin, and H.~J. Lubatti,
+  \ifthenelse{\boolean{articletitles}}{\emph{{New Detectors to Explore the
+  Lifetime Frontier}},
+  }{}\href{https://doi.org/10.1016/j.physletb.2017.01.043}{Phys.\ Lett.\
+  \textbf{B767} (2017) 29},
+  \href{http://arxiv.org/abs/1606.06298}{{\normalfont\ttfamily
+  arXiv:1606.06298}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Feng:2017uoz}
+J.~L. Feng, I.~Galon, F.~Kling, and S.~Trojanowski,
+  \ifthenelse{\boolean{articletitles}}{\emph{{ForwArd Search ExpeRiment at the
+  LHC}}, }{}\href{https://doi.org/10.1103/PhysRevD.97.035001}{Phys.\ Rev.\
+  \textbf{D97} (2018) 035001},
+  \href{http://arxiv.org/abs/1708.09389}{{\normalfont\ttfamily
+  arXiv:1708.09389}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Ball:2016zrp}
+A.~Ball {\em et~al.}, \ifthenelse{\boolean{articletitles}}{\emph{{A Letter of
+  Intent to Install a milli-charged Particle Detector at LHC P5}},
+  }{}\href{http://arxiv.org/abs/1607.04669}{{\normalfont\ttfamily
+  arXiv:1607.04669}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Alekhin:2015byh}
+S.~Alekhin {\em et~al.}, \ifthenelse{\boolean{articletitles}}{\emph{{A facility
+  to Search for Hidden Particles at the CERN SPS: the SHiP physics case}},
+  }{}\href{https://doi.org/10.1088/0034-4885/79/12/124201}{Rept.\ Prog.\ Phys.\
+   \textbf{79} (2016) 124201},
+  \href{http://arxiv.org/abs/1504.04855}{{\normalfont\ttfamily
+  arXiv:1504.04855}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{LHCb-DP-2016-003}
+K.~Carvalho~Akiba {\em et~al.}, \ifthenelse{\boolean{articletitles}}{\emph{{The
+  HeRSCheL detector: high-rapidity shower counters for LHCb}},
+  }{}\href{https://doi.org/10.1088/1748-0221/13/04/P04017}{JINST \textbf{13}
+  (2018) P04017}, \href{http://arxiv.org/abs/1801.04281}{{\normalfont\ttfamily
+  arXiv:1801.04281}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{dd4hep}
+M.~Frank, F.~Gaede, M.~Petric, and A.~Sailer,
+  \ifthenelse{\boolean{articletitles}}{\emph{Aidasoft/dd4hep}, }{} Oct., 2018.
+\newblock webpage: http://dd4hep.cern.ch/,
+  doi:~\href{https://doi.org/10.5281/zenodo.592244}{10.5281/zenodo.592244}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
 \end{mcitethebibliography}
