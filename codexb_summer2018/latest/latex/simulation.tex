@@ -18,18 +18,7 @@
 
 
 \subsection{Detector Description for High Energy Physics}
-<<<<<<< HEAD
-We used Detector Description for High Energy Physics (DD4hep) standalone version \href{https://dd4hep.web.cern.ch/dd4hep/}{[2]}.
-DD4hep is a software framework to provide overall detector description for experiments.
-It offers a consistent description through a single source of detector information for simulation, reconstruction, analysis, etc.
-Additionally, DD4hep being developed for high luminosity large hadron collider (HL-LHC) detector simulation.
-During the internship, we built the geometry of CODEX-b constructing hierachy system.
-We designed concrete shield wall to block particles from particle gun or MC and herschel detector since we used as a scintillator for our measurement.
-For validation $\mu$ particle gun and minbias event had been used.
-We also checked energy deposits and positions of CODEX-b hits. 
-=======
 As the second part of my project, I developed the simulation framework for both the CODEX-b tracking layers as well as the two-scintillator configuration required for the measurements. We used the Detector Description for High Energy Physics ({\tt DD4hep})~\cite{dd4hep} toolkit for this, in conjunction with {\tt Gauss}, the standard LHCb simulation package. {\tt DD4hep} uses the {\tt ROOT} {\tt TGeometry} class for loading the detector geometry in memory and is being developed for high-luminosity LHC. Further, the project is a software framework to provide overall detector description for experiments. It offers consistent description through a single source of detector information for simulation, reconstruction, conditions (alignment), {\em et al.}, and will be adopted by LHCb for the Upgrade. During my internship, I built the geometry of CODEX-b constructing hierachy system, from scratch. I included the concrete shield wall to block particles generated at the interaction point (IP) from particle gun or minimum bias simulation and also checked for the energy deposits and positions of CODEX-b hits, simulated used {\tt DDG4}, the in-built {\tt GEANT} package for {\tt DD4hep}. 
->>>>>>> 5eeb6848b1b265a3490e2d9a99b6809855692ed1
 
 %I learn how to make geometry: layer, station, super staion, envelope (hierachy).
 %I define materials for our detector and CODEX-b geometry such as concrete, Herschel detector.
@@ -41,16 +30,6 @@ As the second part of my project, I developed the simulation framework for both 
 %I made hierachy system to build CODEX-b (envelop, super station, station, layer).
 %I could check energy deposits and positions of CODEX-b hits.
 
-<<<<<<< HEAD
-\subsection{Simulation geometry}
-First geometry is the CODEX-b.
-CODEX-b consists of two parts face station and inner station.
-Based on the paper, face station has 6 resistive plate chambers (RPCs) layers at 4~cm intervals with 1~cm granularity.
-The size of each layer is $10 \times 10$~$m^{2}$ and the thickness is 2~cm. 
-In this simulation we had been implemented layers as a tracker instead of RPCs.
-Inner station also has same configuration except number of layers.
-It will be equally spaced with triplets along the depth to minimize distance between reconstructed vertex and 1st measurement. 
-=======
 
 
 
@@ -62,7 +41,6 @@ The first geometry I constructed was CODEX-b, consisting of two parts, face stat
 %In this simulation we had been implemented layers as a tracker instead of RPCs.
 %Inner station also has same configuration except number of layers.
 %It will be equally spaced with triplets along the depth to minimize distance between reconstructed vertex and 1st measurement. 
->>>>>>> 5eeb6848b1b265a3490e2d9a99b6809855692ed1
 
 %To make coincidence setup with test-bench, I made two Herschel plates with the same positions where all equipment have set.
 %Two plates with 30 x 30~$cm^{2}$ size, 2~cm thickness.
@@ -77,16 +55,6 @@ The first geometry I constructed was CODEX-b, consisting of two parts, face stat
 \centering
 \subfigure[]{
 \centering
-<<<<<<< HEAD
-    \includegraphics[width=0.55\textwidth]{figs/INT/CODEXbBigGeo.pdf} 
-}
-\subfigure[]{
-\centering
-    \includegraphics[width=0.55\textwidth]{figs/INT/ZoomVersion.pdf}
-}
-\caption{
-    CODEX-b simulation geometry: (a) overall, (b) close-up view. 
-=======
     \includegraphics[width=0.47\textwidth]{figs/INT/CODEXbBigGeo.pdf} 
 }
 \subfigure[]{
@@ -95,7 +63,6 @@ The first geometry I constructed was CODEX-b, consisting of two parts, face stat
 }
 \caption{\label{fig:geo_dd4hep}
     CODEX-b simulation geometry in {\tt DD4hep}: (a) overall, (b) close-up view. 
->>>>>>> 5eeb6848b1b265a3490e2d9a99b6809855692ed1
 }
 \end{figure}
 
@@ -104,19 +71,6 @@ The first geometry I constructed was CODEX-b, consisting of two parts, face stat
 
 
 \begin{figure}
-<<<<<<< HEAD
-\centering
-\subfigure[]{
-\centering
-    \includegraphics[width=0.9\textwidth]{figs/INT/Minbias.pdf}
-}
-\subfigure[]{
-\centering
-    \includegraphics[width=0.9\textwidth]{figs/INT/Scint.pdf}
-}
-\caption{
-    Validation of the {\tt DD4Hep} based simulation with the concrete shield wall removed using minimum bias events: (a) CODEX-b box, and (b) two-plate scintillators for measurement campaign.}
-=======
 \centering
 \subfigure[]{
 \centering
@@ -128,7 +82,6 @@ The first geometry I constructed was CODEX-b, consisting of two parts, face stat
 }
 \caption{\label{fig:dd4hep_events}
     Validation of the {\tt DD4hep} based simulation with minimum bias events: (a) CODEX-b box with the shield wall removed, and (b) two-plate scintillators for measurement campaign.}
->>>>>>> 5eeb6848b1b265a3490e2d9a99b6809855692ed1
 \end{figure}
 
 As mentioned above, we designed two different detector geometries based on the proposal paper (Codex-b) and the measurement configuration (HeRSCheL scintillators). Both were tested with $\mu$ particle gun generated at 1\tev, and minimum bias events generated in {\tt Gauss} and loaded in {\tt DDG4} using {\tt HepMC} files. 
